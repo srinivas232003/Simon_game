@@ -2,19 +2,22 @@ let gamepattern=[]
 level=0;
 started=false
 $(document).keypress(function(){
+    console.log(started)
     if(!started){
         nextsequence()
         print(level);
         started=true;
     }
 });
-$("span").fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).click(function(){
+start=(e)=>{
+$(e).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).click(function(){
     if(!started){
         nextsequence()
         print(level);
         started=true;
     }
-});
+});}
+start("span");
 print=(l)=>{
 $("h1").text(`Level-${l}`); 
 }
@@ -67,17 +70,19 @@ checkanswer=(clevel)=>{
         else {
             sound("wrong");
             $("body").addClass("game-over");
-            $("#level-title").text("Game Over, Press Any Key to Restart");
+            $("#level-title").html("Game Over, Press Any Key to <span>Restart</span>");
             setTimeout(function () {
                 $("body").removeClass("game-over");
               }, 200);
         
-              startOver();
+              startover();
+              start("span");
             }
         }
-sartover=()=>{
+startover=()=>{
 level=0;
 gamepattern=[];
+started=false;
 }
         
     
