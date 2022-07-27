@@ -3,6 +3,12 @@
  span{
   color:red;
  }
+ h2{
+  color:#C9BBCF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+  text-decoration: none;
+ }
  body {
   text-align: center;
   background-color: #011F3F;
@@ -37,9 +43,6 @@ a{
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
-}
-.st{
-  margin:0;
 }
 .game-over {
   background-color: red;
