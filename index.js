@@ -12,7 +12,7 @@ $(document).keypress(function(){
 start=(e)=>{
 $(e).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).click(function(){
     if(!started){
-        nextsequence()
+         nextsequence()
         print(level);
         started=true;
     }

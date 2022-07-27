@@ -7,7 +7,14 @@
   text-align: center;
   background-color: #011F3F;
 }
-
+a{
+  text-decoration: none;
+}
+#st{
+  color:#C9BBCF;
+  font-family: 'Montserrat', sans-serif;
+    
+}
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -86,6 +93,6 @@
     margin-bottom:1.8rem;
     color:#C9BBCF;
     font-family: 'Montserrat', sans-serif;
-    ;
+    
   }
    }
